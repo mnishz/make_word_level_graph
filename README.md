@@ -15,5 +15,8 @@ pip3 install treetaggerwrapper numpy matplotlib
 python3 make_word_level_graph.py
 ```
 
+# image
+![image](graph.png)
+
 # Ref
 https://qiita.com/3000manJPY/items/1c553a89b2c70edaa960
