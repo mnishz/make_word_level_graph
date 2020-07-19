@@ -1,16 +1,11 @@
-# How to use
-# 1. Install TreeTagger: https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
-# 2. Install TreeTaggerWrapper, Matplotlib
-# 3. python3 make_word_level_graph.py
-# Output: list of the number of word for each level, unknown words, png
-
 import treetaggerwrapper as ttw
+import os
 
 file_name = 'kennedy'
 file_name = 'obama'
 
 def get_level(file_name):
-    tagger = ttw.TreeTagger(TAGLANG='en')
+    tagger = ttw.TreeTagger(TAGLANG='en', TAGDIR=os.getcwd())
     tags = tagger.tag_file(file_name + '.txt')
     tags2 = ttw.make_tags(tags)
 
